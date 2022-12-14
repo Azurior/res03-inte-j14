@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  button.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    border: none;
+    color: #242523;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  button.btn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -2;
+  }
+  button.btn:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #093d26;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  button.btn:hover {
+    border-radius: 0.8rem;
+    color: #fff;
+  }
+  button.btn:hover:before {
+    width: 120%;
+  }
+  a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    border-radius: 0.7rem;
+    color: #242523;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  a.btn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0.7rem;
+    z-index: -2;
+  }
+  a.btn:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #093d26;
+    transition: all 0.3s;
+    border-radius: 0.7rem;
+    z-index: -1;
+  }
+  a.btn:hover {
+    color: #fff;
+  }
+  a.btn:hover:before {
+    width: 120%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  button.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  button.btn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242523;
+    z-index: -2;
+  }
+  button.btn:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1ad98e;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  button.btn:hover {
+    border-radius: 0.8rem;
+    color: #fff;
+  }
+  button.btn:hover:before {
+    width: 120%;
+  }
+  a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.45rem 0.8rem;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  a.btn:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242523;
+    z-index: -2;
+  }
+  a.btn:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1ad98e;
+    transition: all 0.3s;
+    border-radius: 0.7rem;
+    z-index: -1;
+  }
+  a.btn:hover {
+    border-radius: 0.7rem;
+    color: #fff;
+  }
+  a.btn:hover:before {
+    width: 120%;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #242523;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
